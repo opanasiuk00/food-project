@@ -1,0 +1,11 @@
+@import './variables';
+@import './normalize';
+
+
+.container {
+	max-width: 121rem;
+	min-width: 29rem;
+	margin: 0 auto
+}
+
+@import './components/header-footer.scss';
