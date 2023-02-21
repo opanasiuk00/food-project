@@ -4,7 +4,7 @@ import Footer from '../components/footer';
 import Header from '../components/header';
 
 const MainLayout = () => {
-	console.log('11')
+
 	return (
 		<>
 			<Header />

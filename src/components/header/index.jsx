@@ -22,9 +22,6 @@ const Header = React.memo(() => {
 							<li>
 								<CustomLink path='/contact'>Contact</CustomLink>
 							</li>
-							<li>
-								<CustomLink path='/movie'>Movie</CustomLink>
-							</li>
 						</ul>
 					</nav>
 				</div>

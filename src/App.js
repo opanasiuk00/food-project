@@ -3,9 +3,10 @@ import { Route, Routes } from 'react-router-dom';
 import './style/style.scss';
 import Home from './pages/home';
 import MainLayout from './layout';
+import Meal from './pages/meal';
 
 // const MainLayout = lazy(() => import('./layout'));
-const Movie = lazy(() => import('./pages/movie'));
+const Category = lazy(() => import('./pages/category'));
 const About = lazy(() => import('./pages/about'));
 const Contact = lazy(() => import('./pages/contact'));
 const NotFound = lazy(() => import('./pages/notFound'));
@@ -42,10 +43,18 @@ const App = () => {
 					}
 				/>
 				<Route
-					path='/movie'
+					path='/category/:name'
 					element={
 						<Suspense fallback={<div>spiner</div>}>
-							<Movie />
+							<Category />
+						</Suspense>
+					}
+				/>
+				<Route
+					path='/Meal/:name'
+					element={
+						<Suspense fallback={<div>spiner</div>}>
+							<Meal />
 						</Suspense>
 					}
 				/>
