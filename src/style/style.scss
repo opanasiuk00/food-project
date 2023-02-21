@@ -5,7 +5,8 @@
 .container {
 	max-width: 121rem;
 	min-width: 29rem;
-	margin: 0 auto
+	margin: 0 auto;
 }
 
 @import './components/header-footer.scss';
+@import './components/categories.scss';
